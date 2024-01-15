@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5135c962c9f0cc80963c116ce79176b8",
+    "content-hash": "7979eeea86103b783d4fe59f52f4f9b9",
     "packages": [
         {
             "name": "async-aws/core",
@@ -3224,16 +3224,16 @@
         },
         {
             "name": "spryker/app-kernel",
-            "version": "dev-feature/without-encryption",
+            "version": "0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spryker/app-kernel.git",
-                "reference": "031cea2404a910f2bcc701f1fd90038a25dc71c6"
+                "reference": "06f320a1aa032607136d12edeb0c3519fc18880f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spryker/app-kernel/zipball/031cea2404a910f2bcc701f1fd90038a25dc71c6",
-                "reference": "031cea2404a910f2bcc701f1fd90038a25dc71c6",
+                "url": "https://api.github.com/repos/spryker/app-kernel/zipball/06f320a1aa032607136d12edeb0c3519fc18880f",
+                "reference": "06f320a1aa032607136d12edeb0c3519fc18880f",
                 "shasum": ""
             },
             "require": {
@@ -3281,9 +3281,9 @@
             "description": "AppKernel module",
             "support": {
                 "issues": "https://github.com/spryker/app-kernel/issues",
-                "source": "https://github.com/spryker/app-kernel/tree/feature/without-encryption"
+                "source": "https://github.com/spryker/app-kernel/tree/0.1.1"
             },
-            "time": "2024-01-09T08:00:39+00:00"
+            "time": "2024-01-09T09:01:05+00:00"
         },
         {
             "name": "spryker/app-kernel-extension",
@@ -20829,17 +20829,10 @@
             "version": "dev-feature/resolve-remote-references",
             "alias": "0.3.1",
             "alias_normalized": "0.3.1.0"
-        },
-        {
-            "package": "spryker/app-kernel",
-            "version": "dev-feature/without-encryption",
-            "alias": "0.1.1",
-            "alias_normalized": "0.1.1.0"
         }
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "spryker/app-kernel": 20,
         "spryker-sdk/async-api": 20
     },
     "prefer-stable": true,
