@@ -1,6 +1,6 @@
 {
-    "name": "spryker-projects/payment",
-    "description": "Spryker Payment App Project Code",
+    "name": "spryker-projects/app-core-essentials",
+    "description": "Spryker Core App Project Code",
     "license": "proprietary",
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -65,7 +65,7 @@
         "psr-4": {
             "Generated\\": "src/Generated/",
             "Orm\\": "src/Orm/",
-            "SprykerProject\\": "src/SprykerProject/",
+            "SprykerProject\\": "src/AppCore/",
             "SprykerProjectTest\\AsyncApi\\Payment\\Helper\\": "tests/SprykerProjectTest/AsyncApi/Payment/_support/Helper/",
             "SprykerProjectTest\\Glue\\AppConfig\\Helper\\": "tests/SprykerProjectTest/Glue/AppConfig/_support/Helper/",
             "SprykerProjectTest\\Glue\\PaymentBackendApi\\Helper\\": "tests/SprykerProjectTest/Glue/PaymentBackendApi/_support/Helper/",

@@ -91,8 +91,8 @@ class ConsoleDependencyProvider extends SprykerConsoleDependencyProvider
             new DeleteLogFilesConsole(),
 
             new ResolvableClassCacheConsole(),
-            new RouterDebugBackofficeConsole(),
-            new BackofficeRouterCacheWarmUpConsole(),
+//            new RouterDebugBackofficeConsole(),
+//            new BackofficeRouterCacheWarmUpConsole(),
             new MessageBrokerWorkerConsole(),
 
             new DataImportConsole(),
@@ -121,10 +121,6 @@ class ConsoleDependencyProvider extends SprykerConsoleDependencyProvider
             $commands[] = new RemoveClientIdeAutoCompletionConsole();
             $commands[] = new GenerateServiceIdeAutoCompletionConsole();
             $commands[] = new RemoveServiceIdeAutoCompletionConsole();
-            $commands[] = new GenerateGlueBackendIdeAutoCompletionConsole();
-            $commands[] = new RemoveGlueBackendIdeAutoCompletionConsole();
-            $commands[] = new GenerateGlueIdeAutoCompletionConsole();
-            $commands[] = new RemoveGlueIdeAutoCompletionConsole();
             $commands[] = new SecurityCheckerCommand();
         }
 
