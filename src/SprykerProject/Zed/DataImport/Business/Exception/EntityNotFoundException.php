@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\DataImport\Business\Exception;
+namespace AppCore\Zed\DataImport\Business\Exception;
 
 use Spryker\Zed\DataImport\Business\Exception\DataImportException;
 

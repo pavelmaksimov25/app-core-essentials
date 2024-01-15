@@ -5,10 +5,10 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\DataImport\Business\Model\Locale;
+namespace AppCore\Zed\DataImport\Business\Model\Locale;
 
 use Orm\Zed\Locale\Persistence\SpyLocaleQuery;
-use SprykerProject\Zed\DataImport\Business\Exception\EntityNotFoundException;
+use AppCore\Zed\DataImport\Business\Exception\EntityNotFoundException;
 use Spryker\Zed\DataImport\Business\Exception\DataKeyNotFoundInDataSetException;
 use Spryker\Zed\DataImport\Business\Model\DataImportStep\DataImportStepInterface;
 use Spryker\Zed\DataImport\Business\Model\DataSet\DataSetInterface;
@@ -57,7 +57,7 @@ class LocaleNameToIdLocaleStep implements DataImportStepInterface
     }
 
     /**
-     * @throws \SprykerProject\Zed\DataImport\Business\Exception\EntityNotFoundException
+     * @throws \AppCore\Zed\DataImport\Business\Exception\EntityNotFoundException
      */
     protected function resolveIdLocale(string $localeName): int
     {

@@ -5,9 +5,9 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Glue\GlueApplication;
+namespace AppCore\Glue\GlueApplication;
 
-use SprykerProject\Glue\GlueApplication\Formatter\Response\ResponseFormatter;
+use AppCore\Glue\GlueApplication\Formatter\Response\ResponseFormatter;
 use Spryker\Glue\GlueApplication\Formatter\Response\ResponseFormatterInterface;
 use Spryker\Glue\GlueApplication\GlueApplicationFactory as SprykerGlueApplicationFactory;
 

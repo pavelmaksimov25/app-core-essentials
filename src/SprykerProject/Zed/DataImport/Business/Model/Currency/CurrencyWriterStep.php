@@ -5,10 +5,10 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\DataImport\Business\Model\Currency;
+namespace AppCore\Zed\DataImport\Business\Model\Currency;
 
 use Orm\Zed\Currency\Persistence\SpyCurrencyQuery;
-use SprykerProject\Zed\DataImport\Business\Step\AbstractWriterStep;
+use AppCore\Zed\DataImport\Business\Step\AbstractWriterStep;
 use Spryker\Zed\DataImport\Business\Model\DataSet\DataSetInterface;
 
 class CurrencyWriterStep extends AbstractWriterStep

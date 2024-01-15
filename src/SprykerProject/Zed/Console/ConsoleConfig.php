@@ -5,9 +5,9 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\Console;
+namespace AppCore\Zed\Console;
 
-use SprykerProject\Shared\Console\ConsoleConstants;
+use AppCore\Shared\Console\ConsoleConstants;
 use Spryker\Zed\Console\ConsoleConfig as SprykerConsoleConfig;
 
 class ConsoleConfig extends SprykerConsoleConfig

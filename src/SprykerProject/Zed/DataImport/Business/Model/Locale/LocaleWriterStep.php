@@ -5,10 +5,10 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\DataImport\Business\Model\Locale;
+namespace AppCore\Zed\DataImport\Business\Model\Locale;
 
 use Orm\Zed\Locale\Persistence\SpyLocaleQuery;
-use SprykerProject\Zed\DataImport\Business\Step\AbstractWriterStep;
+use AppCore\Zed\DataImport\Business\Step\AbstractWriterStep;
 use Spryker\Zed\DataImport\Business\Model\DataSet\DataSetInterface;
 
 class LocaleWriterStep extends AbstractWriterStep

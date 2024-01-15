@@ -5,21 +5,21 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\DataImport\Business;
+namespace AppCore\Zed\DataImport\Business;
 
 use Generated\Shared\Transfer\DataImportConfigurationActionTransfer;
-use SprykerProject\Zed\DataImport\Business\Model\Currency\CurrencyWriterStep;
-use SprykerProject\Zed\DataImport\Business\Model\Locale\LocaleWriterStep;
-use SprykerProject\Zed\DataImport\Business\Model\Store\StoreReader;
-use SprykerProject\Zed\DataImport\Business\Model\Store\StoreWriterStep;
-use SprykerProject\Zed\DataImport\DataImportConfig;
+use AppCore\Zed\DataImport\Business\Model\Currency\CurrencyWriterStep;
+use AppCore\Zed\DataImport\Business\Model\Locale\LocaleWriterStep;
+use AppCore\Zed\DataImport\Business\Model\Store\StoreReader;
+use AppCore\Zed\DataImport\Business\Model\Store\StoreWriterStep;
+use AppCore\Zed\DataImport\DataImportConfig;
 use Spryker\Shared\Kernel\Store;
 use Spryker\Zed\DataImport\Business\DataImportBusinessFactory as SprykerDataImportBusinessFactory;
 use Spryker\Zed\DataImport\Business\Model\DataImporterInterface;
 use Spryker\Zed\DataImport\Business\Model\DataSet\DataSetStepBroker;
 
 /**
- * @method \SprykerProject\Zed\DataImport\DataImportConfig getConfig()
+ * @method \AppCore\Zed\DataImport\DataImportConfig getConfig()
  * @SuppressWarnings(PHPMD.CyclomaticComplexity)
  * @SuppressWarnings(PHPMD.ExcessiveClassComplexity)
  * @SuppressWarnings(PHPMD.ExcessiveClassLength)

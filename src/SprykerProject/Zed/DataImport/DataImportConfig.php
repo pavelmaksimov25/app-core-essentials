@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\DataImport;
+namespace AppCore\Zed\DataImport;
 
 use Spryker\Zed\DataImport\DataImportConfig as SprykerDataImportConfig;
 

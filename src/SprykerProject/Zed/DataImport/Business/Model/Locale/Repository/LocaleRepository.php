@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\DataImport\Business\Model\Locale\Repository;
+namespace AppCore\Zed\DataImport\Business\Model\Locale\Repository;
 
 use Orm\Zed\Locale\Persistence\Map\SpyLocaleTableMap;
 use Orm\Zed\Locale\Persistence\SpyLocaleQuery;

@@ -5,11 +5,11 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\MessageBroker;
+namespace AppCore\Zed\MessageBroker;
 
-use SprykerProject\Zed\Payment\Communication\Plugin\MessageBroker\PaymentCancelReservationRequestedMessageHandlerPlugin;
-use SprykerProject\Zed\Payment\Communication\Plugin\MessageBroker\PaymentConfirmationRequestedMessageHandlerPlugin;
-use SprykerProject\Zed\Payment\Communication\Plugin\MessageBroker\PaymentRefundRequestedMessageHandlerPlugin;
+use AppCore\Zed\Payment\Communication\Plugin\MessageBroker\PaymentCancelReservationRequestedMessageHandlerPlugin;
+use AppCore\Zed\Payment\Communication\Plugin\MessageBroker\PaymentConfirmationRequestedMessageHandlerPlugin;
+use AppCore\Zed\Payment\Communication\Plugin\MessageBroker\PaymentRefundRequestedMessageHandlerPlugin;
 use Spryker\Zed\MessageBroker\Communication\Plugin\MessageBroker\CorrelationIdMessageAttributeProviderPlugin;
 use Spryker\Zed\MessageBroker\Communication\Plugin\MessageBroker\TimestampMessageAttributeProviderPlugin;
 use Spryker\Zed\MessageBroker\MessageBrokerDependencyProvider as SprykerMessageBrokerDependencyProvider;
@@ -20,7 +20,7 @@ use Spryker\Zed\MessageBrokerAws\Communication\Plugin\MessageBroker\Sender\HttpM
 use Spryker\Zed\OauthClient\Communication\Plugin\MessageBroker\AccessTokenMessageAttributeProviderPlugin;
 
 /**
- * @method \SprykerProject\Zed\MessageBroker\MessageBrokerConfig getConfig()
+ * @method \AppCore\Zed\MessageBroker\MessageBrokerConfig getConfig()
  */
 class MessageBrokerDependencyProvider extends SprykerMessageBrokerDependencyProvider
 {
