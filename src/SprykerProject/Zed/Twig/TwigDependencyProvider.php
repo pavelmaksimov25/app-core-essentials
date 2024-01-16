@@ -11,9 +11,7 @@ use Spryker\Shared\Twig\Plugin\DebugTwigPlugin;
 use Spryker\Shared\Twig\Plugin\RoutingTwigPlugin;
 use Spryker\Zed\Application\Communication\Plugin\Twig\ApplicationTwigPlugin;
 use Spryker\Zed\Gui\Communication\Plugin\Twig\AssetsPathTwigPlugin;
-use Spryker\Zed\Http\Communication\Plugin\Twig\HttpKernelTwigPlugin;
 use Spryker\Zed\Scheduler\Communication\Plugin\Twig\SchedulerTwigPlugin;
-use Spryker\Zed\Translator\Communication\Plugin\Twig\TranslatorTwigPlugin;
 use Spryker\Zed\Twig\Communication\Plugin\FilesystemTwigLoaderPlugin;
 use Spryker\Zed\Twig\TwigDependencyProvider as SprykerTwigDependencyProvider;
 use Spryker\Zed\WebProfiler\Communication\Plugin\Twig\WebProfilerTwigLoaderPlugin;
@@ -27,10 +25,8 @@ class TwigDependencyProvider extends SprykerTwigDependencyProvider
     {
         return [
             new DebugTwigPlugin(),
-            new HttpKernelTwigPlugin(),
             new RoutingTwigPlugin(),
             new ApplicationTwigPlugin(),
-            new TranslatorTwigPlugin(),
             new AssetsPathTwigPlugin(),
             new SchedulerTwigPlugin(),
         ];
