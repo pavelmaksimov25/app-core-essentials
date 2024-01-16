@@ -7,17 +7,11 @@
 
 namespace AppCore\Zed\MessageBroker;
 
-use AppCore\Zed\Payment\Communication\Plugin\MessageBroker\PaymentCancelReservationRequestedMessageHandlerPlugin;
-use AppCore\Zed\Payment\Communication\Plugin\MessageBroker\PaymentConfirmationRequestedMessageHandlerPlugin;
-use AppCore\Zed\Payment\Communication\Plugin\MessageBroker\PaymentRefundRequestedMessageHandlerPlugin;
 use Spryker\Zed\MessageBroker\Communication\Plugin\MessageBroker\CorrelationIdMessageAttributeProviderPlugin;
 use Spryker\Zed\MessageBroker\Communication\Plugin\MessageBroker\TimestampMessageAttributeProviderPlugin;
 use Spryker\Zed\MessageBroker\MessageBrokerDependencyProvider as SprykerMessageBrokerDependencyProvider;
-use Spryker\Zed\MessageBrokerAws\Communication\Plugin\MessageBroker\Receiver\AwsSqsMessageReceiverPlugin;
 use Spryker\Zed\MessageBrokerAws\Communication\Plugin\MessageBroker\Receiver\HttpChannelMessageReceiverPlugin;
 use Spryker\Zed\MessageBrokerAws\Communication\Plugin\MessageBroker\Sender\HttpChannelMessageSenderPlugin;
-use Spryker\Zed\MessageBrokerAws\Communication\Plugin\MessageBroker\Sender\HttpMessageSenderPlugin;
-use Spryker\Zed\OauthClient\Communication\Plugin\MessageBroker\AccessTokenMessageAttributeProviderPlugin;
 
 /**
  * @method \AppCore\Zed\MessageBroker\MessageBrokerConfig getConfig()
@@ -32,13 +26,7 @@ class MessageBrokerDependencyProvider extends SprykerMessageBrokerDependencyProv
         // this structure is required for now and allows to enable any combination of message buses, even both
         $plugins = [];
 
-        if ($this->getConfig()->isMb1Enabled()) {
-            $plugins[] = new HttpMessageSenderPlugin();
-        }
-
-        if ($this->getConfig()->isMb2Enabled()) {
-            $plugins[] = new HttpChannelMessageSenderPlugin();
-        }
+        $plugins[] = new HttpChannelMessageSenderPlugin();
 
         return $plugins;
     }
@@ -48,16 +36,9 @@ class MessageBrokerDependencyProvider extends SprykerMessageBrokerDependencyProv
      */
     public function getMessageReceiverPlugins(): array
     {
-        // this structure is required for now and allows to enable any combination of message buses, even both
         $plugins = [];
 
-        if ($this->getConfig()->isMb1Enabled()) {
-            $plugins[] = new AwsSqsMessageReceiverPlugin();
-        }
-
-        if ($this->getConfig()->isMb2Enabled()) {
-            $plugins[] = new HttpChannelMessageReceiverPlugin();
-        }
+        $plugins[] = new HttpChannelMessageReceiverPlugin();
 
         return $plugins;
     }
@@ -70,7 +51,6 @@ class MessageBrokerDependencyProvider extends SprykerMessageBrokerDependencyProv
         return [
             new CorrelationIdMessageAttributeProviderPlugin(),
             new TimestampMessageAttributeProviderPlugin(),
-            new AccessTokenMessageAttributeProviderPlugin(),
         ];
     }
 
@@ -79,10 +59,6 @@ class MessageBrokerDependencyProvider extends SprykerMessageBrokerDependencyProv
      */
     public function getMessageHandlerPlugins(): array
     {
-        return [
-            new PaymentCancelReservationRequestedMessageHandlerPlugin(),
-            new PaymentConfirmationRequestedMessageHandlerPlugin(),
-            new PaymentRefundRequestedMessageHandlerPlugin(),
-        ];
+        return [];
     }
 }

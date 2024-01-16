@@ -7,8 +7,6 @@
 
 namespace AppCore\Glue\GlueBackendApiApplication;
 
-use AppCore\Glue\PaymentBackendApi\Plugin\GlueApplication\PaymentBackendApiRouteProviderPlugin;
-use Spryker\Glue\AppKernel\Plugin\RouteProvider\AppRouteProviderPlugin;
 use Spryker\Glue\GlueBackendApiApplication\GlueBackendApiApplicationDependencyProvider as SprykerGlueBackendApiApplicationDependencyProvider;
 use Spryker\Glue\GlueBackendApiApplication\Plugin\GlueApplication\ApplicationIdentifierRequestBuilderPlugin;
 use Spryker\Glue\GlueBackendApiApplication\Plugin\GlueApplication\LocaleRequestBuilderPlugin;
@@ -61,16 +59,6 @@ class GlueBackendApiApplicationDependencyProvider extends SprykerGlueBackendApiA
         return [
             new ApplicationIdentifierRequestBuilderPlugin(),
             new LocaleRequestBuilderPlugin(),
-        ];
-    }
-
-    /**
-     * @return array<\Spryker\Glue\GlueApplicationExtension\Dependency\Plugin\RouteProviderPluginInterface>
-     */
-    protected function getRouteProviderPlugins(): array
-    {
-        return [
-            new AppRouteProviderPlugin(), new PaymentBackendApiRouteProviderPlugin(),
         ];
     }
 
